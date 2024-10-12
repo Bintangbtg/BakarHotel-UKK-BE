@@ -35,13 +35,16 @@ return [
     |
     */
 
+    // 'guards' => [
+    //     'web' => [
+    //         'driver' => 'session',
+    //         'provider' => 'users',
+    //     ],
+    // ],
+
     'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'users',
-        ],
-        'api' => [                  
-            'driver' => 'jwt',  
+        'api' => [
+            'driver' => 'jwt',  // Pakai driver 'jwt'
             'provider' => 'users',
         ],
     ],
